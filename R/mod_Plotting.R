@@ -7,7 +7,7 @@
 #' @noRd
 #'
 #' @importFrom shiny NS tagList
-mod_abundance_ui <- function(id){
+mod_Plotting_ui <- function(id){
   ns <- NS(id)
   tagList(
     shiny::sidebarLayout(
