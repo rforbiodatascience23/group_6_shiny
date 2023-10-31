@@ -1,11 +1,6 @@
 Package: G6.DCMG.App
 Title: PKG_TITLE
 Version: 0.0.0.9000
-<<<<<<< HEAD
-Authors@R: person('AUTHOR_FIRST', 'AUTHOR_LAST', email = 'AUTHOR@MAIL.COM', role = c('cre', 'aut'))
-Description: PKG_DESC.
-License: What license is it under?
-=======
 Authors@R: c(person(given = "Victor",
            family = "Fierrez Juan",
            role = c("aut", "cre"), # There must be a "cre", but there can only be one
@@ -24,7 +19,6 @@ Authors@R: c(person(given = "Victor",
            email = "sanizbe.pablo@gmail.com"))
 Description: PKG_DESC.
 License: MIT + file LICENSE
->>>>>>> 294d4ef26923df94eb93fd0dc1790c356302fd4a
 Imports: 
     config (>= 0.3.1),
     golem (>= 0.4.1),
