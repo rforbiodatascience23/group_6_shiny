@@ -12,3 +12,5 @@ $run_dev.*
 ^README\.Rmd$
 ^CODE_OF_CONDUCT\.md$
 >>>>>>> 804ec1bd7581eaa48ce38f94336ba2e9f1c683bd
+^app\.R$
+^rsconnect$
