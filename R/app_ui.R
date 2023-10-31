@@ -10,7 +10,7 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
     fluidPage(
-      h1("G6.DCMG.App"),
+      h1("Central Dogma MB App"),
       tabsetPanel(
         tabPanel(title = "panel1",
                  mod_DNAGenerator_ui("DNAGenerator_1")),
