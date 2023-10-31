@@ -7,3 +7,4 @@
 app_server <- function(input, output, session) {
   mod_Plotting_server("Plotting_1")
 }
+
