@@ -33,7 +33,7 @@ mod_Plotting_ui <- function(id){
 
 #' Plotting Server Functions
 #' @import CentralDogmaMD
-#' @importfrom ggplot2 theme
+#' @importFrom ggplot2 theme
 #' @noRd
 mod_Plotting_server <- function(id){
   moduleServer( id, function(input, output, session){
