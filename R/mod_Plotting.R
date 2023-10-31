@@ -10,9 +10,9 @@
 mod_Plotting_ui <- function(id){
   ns <- NS(id)
   tagList(
-    shiny::sidebarLayout(
-      shiny::sidebarPanel(
-        shiny::textAreaInput(
+    sidebarLayout(
+      sidebarPanel(
+        textAreaInput(
           inputId = ns("peptide"),
           label = "Peptide sequence",
           width = 300,
@@ -20,8 +20,8 @@ mod_Plotting_ui <- function(id){
           placeholder = "ADGILAH"
         )
       ),
-      shiny::mainPanel(
-        shiny::plotOutput(
+      mainPanel(
+        plotOutput(
           outputId = ns("abundance")
         )
 
