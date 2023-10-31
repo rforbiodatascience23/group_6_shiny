@@ -13,7 +13,7 @@ app_ui <- function(request) {
       h1("G6.DCMG.App"),
       tabsetPanel(
         tabPanel(title = "panel1",
-                 "module1"),
+                 mod_DNAGenerator_ui("DNAGenerator_1")),
         tabPanel(title = "panel2",
                  mod_Plotting_ui("Plotting_1"))
       )
