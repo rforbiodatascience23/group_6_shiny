@@ -1,12 +1,23 @@
 Package: G6.DCMG.App
-Title: An Amazing Shiny App
+Title: PKG_TITLE
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
-Description: What the package does (one paragraph).
+Authors@R: c(person(given = "Victor",
+           family = "Fierrez Juan",
+           role = c("aut", "cre"), # There must be a "cre", but there can only be one
+           email = "s223196@email.com"), 
+    person(given = "Laura",
+           family = "Casanovas Buliart",
+           role = "aut",
+           email = "s222798@dtu.dk"),
+    person(given = "Javi",
+           family = "Lopez Bort",
+           role = "aut",
+           email = "s223237@dtu.dk")
+    person(given = "Pablo",
+           family = "Sánchez-Izquierdo Besora",
+           role = "aut",
+           email = "sanizbe.pablo@gmail.com"))
+Description: PKG_DESC.
 License: What license is it under?
 Imports: 
     config (>= 0.3.1),
