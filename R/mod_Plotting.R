@@ -14,7 +14,7 @@ mod_Plotting_ui <- function(id){
       sidebarPanel(
         textAreaInput(
           inputId = ns("peptide"),
-          label = "Hauriem d'havec continuat com he dit jo",
+          label = "Peptide Sequence",
           width = 300,
           height = 100,
           placeholder = "ADGILAH"
@@ -36,7 +36,15 @@ mod_Plotting_ui <- function(id){
 mod_Plotting_server <- function(id){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
-
+    output$abundance <- renderPlot({
+      if(input$peptide == ""){
+        NULL
+      } else{
+        input$peptide |>
+          CentralDogmaMD::PlotAA() +
+          ggplot2::theme(legend.position = "none")
+      }
+    })
   })
 }
 
