@@ -37,7 +37,22 @@ mod_DNAGenerator_ui <- function(id){
 mod_DNAGenerator_server <- function(id){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
-
+    dna <- reactiveVal()
+    output$DNA <- renderUI({
+      textAreaInput(
+        inputId = ns("DNA"),
+        label = "DNA sequence",
+        placeholder = "Insert DNA sequence",
+        value = dna(),
+        height = 100,
+        width = 600
+      )
+    })
+    observeEvent(input$generate_dna, {
+      dna(
+        CentralDogmaMD::SampleDNA(input$dna_length)
+      )
+    })
   })
 }
 
