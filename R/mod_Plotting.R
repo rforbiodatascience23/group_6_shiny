@@ -17,7 +17,7 @@ mod_abundance_ui <- function(id){
           label = "Peptide sequence",
           width = 300,
           height = 100,
-          placeholder = "Insert peptide sequence"
+          placeholder = "ADGILAH"
         )
       ),
       shiny::mainPanel(
