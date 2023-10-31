@@ -14,7 +14,7 @@ mod_Plotting_ui <- function(id){
       sidebarPanel(
         textAreaInput(
           inputId = ns("peptide"),
-          label = "Peptide sequence",
+          label = "Hauriem d'havec continuat com he dit jo",
           width = 300,
           height = 100,
           placeholder = "ADGILAH"
