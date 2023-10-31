@@ -2,6 +2,7 @@
 #'
 #' @description A shiny Module.
 #'
+#'
 #' @param id,input,output,session Internal parameters for {shiny}.
 #'
 #' @noRd
@@ -14,7 +15,7 @@ mod_Plotting_ui <- function(id){
       sidebarPanel(
         textAreaInput(
           inputId = ns("peptide"),
-          label = "Peptide Sequence",
+          label = "Insert peptide sequence",
           width = 300,
           height = 100,
           placeholder = "ADGILAH"
@@ -31,7 +32,8 @@ mod_Plotting_ui <- function(id){
 }
 
 #' Plotting Server Functions
-#'
+#' @import CentralDogmaMD
+#' @importfrom ggplot2 theme
 #' @noRd
 mod_Plotting_server <- function(id){
   moduleServer( id, function(input, output, session){
