@@ -1,35 +1,20 @@
 Package: G6.DCMG.App
 Title: PKG_TITLE
 Version: 0.0.0.9000
-Authors@R: c(person(given = "Victor",
-           family = "Fierrez Juan",
-           role = c("aut", "cre"), # There must be a "cre", but there can only be one
-           email = "s223196@email.com"), 
-    person(given = "Laura",
-           family = "Casanovas Buliart",
-           role = "aut",
-           email = "s222798@dtu.dk"),
-    person(given = "Javi",
-           family = "Lopez Bort",
-           role = "aut",
-           email = "s223237@dtu.dk")
-    person(given = "Pablo",
-           family = "Sánchez-Izquierdo Besora",
-           role = "aut",
-           email = "sanizbe.pablo@gmail.com"))
+Authors@R: c(
+ .
+   )
 Description: PKG_DESC.
 License: MIT + file LICENSE
 Imports: 
-    config (>= 0.3.1),
-    golem (>= 0.4.1),
-    pkgload,
-    shiny (>= 1.7.5),
-    ggplot2,
     CentralDogmaMD,
-    stringr (>= 1.5.0)
-Encoding: UTF-8
-LazyData: true
-RoxygenNote: 7.2.3
+    config (>= 0.3.1),
+    ggplot2,
+    golem (>= 0.4.1),
+    shiny (>= 1.7.5)
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
