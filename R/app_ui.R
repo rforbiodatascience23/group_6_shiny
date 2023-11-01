@@ -10,7 +10,13 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
     fluidPage(
-      h1("Central Dogma MB App")
+      h1("Central Dogma MB App"),
+      tabsetPanel(
+        tabPanel(title = "Translation",
+                 mod_Translation_ui("Translation_1")),
+        tabPanel(title = "Plotting",
+                 mod_Plotting_ui("Plotting_1"))
+      )
     )
   )
 }
