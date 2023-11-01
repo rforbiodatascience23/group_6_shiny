@@ -12,8 +12,8 @@ app_ui <- function(request) {
     fluidPage(
       h1("Central Dogma MB App"),
       tabsetPanel(
-        tabPanel(title = "panel1",
-                 mod_DNAGenerator_ui("DNAGenerator_1")),
+        tabPanel(title = "Translation",
+                 mod_Translation_ui("Translation_1")),
         tabPanel(title = "panel2",
                  mod_Plotting_ui("Plotting_1"))
       )

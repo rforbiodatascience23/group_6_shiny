@@ -21,6 +21,7 @@ attachment::att_amend_desc()
 ## Create a module infrastructure in R/
 golem::add_module(name = "DNAGenerator", with_test = FALSE) # Name of the module
 golem::add_module(name = "Plotting", with_test = FALSE) # Name of the module
+golem::add_module(name = "Translation", with_test = FALSE) # Name of the module
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*
