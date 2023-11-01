@@ -14,7 +14,7 @@ app_ui <- function(request) {
       tabsetPanel(
         tabPanel(title = "Translation",
                  mod_Translation_ui("Translation_1")),
-        tabPanel(title = "panel2",
+        tabPanel(title = "Plotting",
                  mod_Plotting_ui("Plotting_1"))
       )
     )
