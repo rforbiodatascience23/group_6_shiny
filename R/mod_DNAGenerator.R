@@ -14,7 +14,7 @@ mod_DNAGenerator_ui <- function(id){
       column(8, uiOutput(ns("DNA"))),
       column(4, numericInput(
         inputId = ns("dna_length"),
-        value = 6000,
+        value = 100,
         min = 3,
         max = 100000,
         step = 3,
